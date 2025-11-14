@@ -1,0 +1,11 @@
+# Temporary placeholder to satisfy package builds that open requirements.txt
+# You can remove this file after the package installs successfully.
+
+# (Leave empty unless specific deps are required)
+
+python-dotenv
+fastapi
+uvicorn
+pydantic
+openai
+
