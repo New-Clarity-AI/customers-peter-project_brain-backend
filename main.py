@@ -172,7 +172,7 @@ def create_chatkit_session():
     except Exception as e:
         logging.error(f"Error creating ChatKit session: {str(e)}", exc_info=True)
         raise HTTPException(status_code=500, detail=f"Session creation failed: {str(e)}")
-
+# Run the app
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=Port)
