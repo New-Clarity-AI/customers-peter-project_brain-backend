@@ -9,3 +9,18 @@ uvicorn
 pydantic
 openai
 openai-agents
+fastapi
+uvicorn[standard]
+python-dotenv
+requests
+supabase
+psycopg2-binary
+celery[redis]
+redis
+PyMuPDF        # fitz
+python-docx
+pandas
+tqdm
+openai         # or your LLM provider client
+tiktoken       # optionally for token counting
+pinecone-client 

@@ -1,12 +1,15 @@
 from agents import FileSearchTool, Agent, ModelSettings, TResponseInputItem, Runner, RunConfig, trace
 from pydantic import BaseModel
 
+
 # Tool definitions
 file_search = FileSearchTool(
   vector_store_ids=[
     "vs_6913591296d881918a29c75692f84242"
   ]
 )
+
+# Agent definition
 my_agent = Agent(
   name="My agent",
   instructions="""### Role
