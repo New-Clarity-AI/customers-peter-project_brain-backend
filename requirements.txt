@@ -23,5 +23,5 @@ pandas
 tqdm
 openai         # or your LLM provider client
 tiktoken       # optionally for token counting
-pinecone-client 
+pinecone
 python-jose
