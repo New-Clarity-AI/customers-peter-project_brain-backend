@@ -1,14 +1,11 @@
 # back_end/routes/documents.py
-from fastapi import APIRouter, UploadFile, File, HTTPException
+from fastapi import APIRouter, UploadFile
 import uuid, os, logging
-from workers.celery_app import ingest_file_task
-from services.supabase_client import upload_file_to_supabase
 from services.file_processing import extract_text_from_file_bytes
 from services.embeddings import client, embedding_model
 from services.pinecone_client import index
 from services.chunker import chunk_text_by_tokens, compute_chunk_hash              
 from services.supabase_client import supabase
-from .agent import Message
 from fastapi import Form
 
 router = APIRouter()

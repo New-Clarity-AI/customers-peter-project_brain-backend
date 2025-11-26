@@ -2,7 +2,6 @@
 from typing import Union, Optional, List, Dict
 from fastapi import APIRouter, HTTPException
 from openai import OpenAI
-from .vector import query_vector
 from pydantic import BaseModel
 from dotenv import load_dotenv
 from services.embeddings import embed_text
@@ -31,8 +30,8 @@ class Message(BaseModel):
 def agent_answer(req: Message):
     q = req.content
     user_ns = req.user_id
-    #if not user_ns:
-       # raise HTTPException(status_code=400, detail="user_id is required")
+    if not user_ns:
+        raise HTTPException(status_code=400, detail="user_id is required")
 
 
     # 1) query embedding
