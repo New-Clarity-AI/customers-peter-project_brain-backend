@@ -17,7 +17,7 @@ logging.basicConfig(level=logging.DEBUG)
 
 load_dotenv(find_dotenv())
 app = FastAPI()
-app.add_middleware(SupabaseAuthMiddleware)
+app.add_middleware(SupabaseAuthMiddleware)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
 Port = 8001
 
 
@@ -127,11 +127,38 @@ def create_chatkit_session():
         logging.error(f"Error creating ChatKit session: {str(e)}", exc_info=True)
         raise HTTPException(status_code=500, detail=f"Session creation failed: {str(e)}")
 
-
-# Run the app
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   #////////////////////////////
+# Run the app                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=Port)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#////////////////////
+        #||
+        #||
+        #||
+        #||
+        #||
+        #||
+        
+             
+    
+        
+                  
 
 
