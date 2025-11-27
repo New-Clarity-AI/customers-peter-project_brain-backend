@@ -49,7 +49,7 @@ def agent_answer(req: Message):
 
     # 3) build context (concatenate top matches)
     matches = results.get("matches", [])
-    context = "\n\n".join([m["metadata"].get("text", "") for m in matches])
+    context = "\n\n".join([m["metadata"].get("text""file_name") for m in matches])
 
     # 4) prompt the LLM (GPT-5.1)
     system_prompt = (
